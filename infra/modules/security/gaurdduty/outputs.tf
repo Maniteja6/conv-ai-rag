@@ -1,0 +1,13 @@
+# ============================================================================
+# modules/security/guardduty — outputs
+# ============================================================================
+
+output "detector_id" {
+  description = "GuardDuty detector ID."
+  value       = aws_guardduty_detector.this.id
+}
+
+output "detector_arn" {
+  description = "GuardDuty detector ARN."
+  value       = aws_guardduty_detector.this.arn
+}
